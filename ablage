@@ -1,0 +1,263 @@
+    Bild:
+    html: <img src="img/Titelbild.jpg" class="title-image">
+    
+    css: .title-image {
+    width: 100%;
+    }
+
+    Bild mit class:  
+    html: <img src="img/Swisscom_Lifeform_RGB_Colour.png" class="imagetwo" id="imagetwo">
+    css: .imagetwo {
+    height: 40%;
+    position: absolute;
+    width: 250px;
+    left: 56%;
+    top: 47%;
+}
+
+Button horizontale Einmittung: Im Div weiter oben "Text-align: center;"
+
+Klick-Dropdown: Javascript (Nur Anfang!!):
+
+function dropdown() {
+    getElementById("dropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown")
+        var i;
+    for
+    }
+}
+
+Wenn der Hintergrund nicht erscheint
+
+Background-image: url(../img/"Bild Url")
+
+In CSS = HTML, Body und Background auf height, width=100%;
+
+backface-visibility: hidden;
+= 
+Die Eigenschaft " Rückseite - Sichtbarkeit" definiert,
+ob die Rückseite eines Elements sichtbar sein soll, wenn es dem Benutzer zugewandt ist. 
+Die Rückseite eines Elements ist ein Spiegelbild der angezeigten Vorderseite. 
+Diese Eigenschaft ist nützlich, wenn ein Element gedreht wird. Hier können Sie auswählen,
+ob der Benutzer die Rückseite sehen soll oder nicht.
+
+
+Dropdown Button
+HTML:  <div class="dropdown">
+                <button class="dropbtn">Zertifikate</button>
+                <div class="dropdown-content">
+                    <h4>
+                        English PET-Exam<br> Gymi-Prüfung
+                        <br> Tastaturschreibenkurs (10 Fingersystem)
+                    </h4>
+                </div>
+            </div>
+
+CSS:    .dropdown {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .dropdown button {
+        background-color: black;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        width: 200px;
+    }
+    
+    .dropdown-content {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: white;
+        min-width: 160px;
+        max-width: 300px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+    
+    .dropdown-content h4 {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 15px;
+        padding: 0;
+    }
+    
+    .dropdown-content:hover {
+        background-color: #333350;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
+    Form:
+    Html: <form class="Contactbox" id="fourth" method="post" method="POST" action="contact-form.php">
+        <p>Kontakt</p>
+
+        <div class="login">
+            <input type="text" name="name" placeholder="Dein Name" class="input">
+            <input type="email" name="email" placeholder="Deine E-Mail" class="input">
+        </div>
+
+        <div class="subject">
+            <input type="text" name="betreff" placeholder="Betreff" class="input">
+        </div>
+
+        <div class="msg">
+            <textarea name="message" class="area" placeholder="Fragen, Feedback und Verbesserungsvorschläge"></textarea>
+        </div>
+
+        <div class="submit">
+            <a type="submit" href="#" class="btn">Das Kontaktformular ist leider noch in Entwicklung!</a>
+        </div>
+    </form>
+
+    CSS: .Contactbox {
+        max-width: 800px;
+        height: auto;
+        background: #333350;
+        margin: auto;
+        box-sizing: border-box;
+        padding: 40px;
+        scroll-behavior: smooth;
+    }
+    
+    .Contactbox p {
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 45px;
+        margin-bottom: 20px;
+        background-color: white;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .Contactbox .input,
+    .msg .area {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 25px;
+        border: 2px solid orange;
+        font-size: 14px;
+        border-radius: 5px;
+        outline: none;
+        transition: all 0.5s;
+        background-color: #333350;
+        color: white;
+    }
+    
+    .Contactbox .login .input {
+        width: 48%;
+        margin-right: 4%;
+        background-color: #333350;
+    }
+    
+    .Contactbox .login {
+        display: flex;
+    }
+    
+    .Contactbox .login .input:last-child {
+        margin-right: 0;
+    }
+    
+    .Contactbox .msg .area {
+        height: 200px;
+    }
+    
+    .Contactbox .input:focus,
+    .msg .area:focus {
+        border: 2px solid black;
+    }
+    
+    .Contactbox .submit {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .Contactbox .btn {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #333350;
+        font-size: 19px;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+        border-radius: 5px;
+        border-color: orange;
+    }
+    
+     ::-webkit-input-placeholder {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+
+
+
+
+
+
+
+    Loader:
+    Html: <div id="overlay">
+        <div class="loading-page">
+            <h1 data-text="Loading...">Loading...</h1>
+        </div>
+    </div>
+
+    CSS:   .loading-page {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: transparent;
+    }
+    
+    .loading-page h1 {
+        position: relative;
+        font-size: 8em;
+        color: #222;
+        text-transform: uppercase;
+        border-bottom: 16px solid #222;
+        letter-spacing: 0.05em;
+        line-height: 1.2em;
+    }
+    
+    .loading-page h1:before {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        color: #0080FF;
+        overflow: hidden;
+        border-bottom: 16px solid #0080FF;
+        animation: animate 0.75s linear infinite;
+    }
+    
+    @keyframes animate {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 100%;
+        }
+    }

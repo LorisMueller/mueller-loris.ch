@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loris-Mueller</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./js/script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script> -->
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png">
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <ul class="nav-item-list">
+            <li><a href="#first">Über mich</a></li>
+            <li><a href="#second">Bisherige Projekte</a></li>
+            <li><a href="#third">Interesse und Skills</a></li>
+            <li><a href="#third">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <ul class="slideshow">
+        <li><span></span></li>
+        <li><span> </span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <div class="title-text">
+            <h1 class="title">Loris Müller</h1>
+        </div>
+        <div class="circleSection">
+            <a href="#first"><button class="circle"><img class="arrow" src="./img/Arrow-down.png"></button></a>
+        </div>
+
+    </ul>
+
+
+    <div class="aboutme" id="first">
+        <div class="aboutme-text-wrapper">
+            <h1>
+                Über mich
+            </h1>
+            <h3 class="main-text">
+                <span>Ich bin </span><span>Loris Müller</span>, <span>17 Jahre alt und bin im 2. Lehrjahr<br> bei der Swisscom als </span><span>Applikationsentwickler</span><span>. Für die Lehre bei Swisscom habe ich mich entschieden, weil die Selbständigkeit an erster Stelle steht. Ich freue mich auf jede neue </span><span>Herausforderung</span><span> und Aufgabe, bei der ich Neues lernen und weiter Kontakte knüpfen kann. <br> Auf meiner Bewerbungseite sind meine </span><span>Bewerbung</span><span>, alle bisherigen Projekte und meine Interessen zu finden.<br></span>
+            </h3>
+            <div class="ambuttons">
+                <br><br>
+                <a href="Dateien/Bewerbung_Wan+.pdf" target="_blank"><button class="Bewerbung">Bewerbungsschreiben</button></a>
+            </div>
+        </div>
+        <div class="img-div">
+            <img src="img/portraet.jpg">
+        </div>
+
+    </div>
+    <div class="border-div"></div>
+
+    <div class="projects"  id="second">
+        <!-- <a href="#third"><button class="circle3"><img class="arrow" src="./img/Arrow-down.png"></button></a> -->
+        <h1 class="title">
+            Meine Projekte
+        </h1>
+        <div class="timeline">
+            <!-- <p>Nex-CC: <br>Nex-CC entwickelt eigene Applikationen (z.B das Notentool) und leistet nebenbei noch technichen Support für Swisscom-Lernende. Ohne viel Erfahrung, lernte ich zuerst die Grundlagen von HTML, CSS und JS kennen. Von den erlernten
+                Kenntnissen "programmierte" ich diese Website hier.</p> -->
+            <p>Apps Team:<br> In meinem 2. Projekt arbeite ich im Apps-Team als Frontend-Developer. Anfangs weitete ich meine Kenntnis im Berreich Vue.js aus, indem ich eine Memory-App programmierte. Später durfte ich mein erstes Kundenprojekt entgegennehmen.
+                Ich baute eine Website aus und fügte Kommentarfunktion und Weiteres hinzu.</p>
+            <p>Asimov:<br> Das von mir ausgewählte Projekt Asimov ist auf die Automatisierung spezialisiert und war für mich eine neue Erfahrung. Einerseits die Entwicklung mit SQL, Python und Programmen wie Celonis oder IDH und andererseits die Arbeitstruktur
+                SCRUM, was eine sehr wertvolle Erfahrung war.</p>
+            <p>HIVE: <br>Hive ist ein engagiertes Lernenden-Team, es hilft den Swisscom Kickboxen/StartUps Webseiten, Apps und Werbevideos zu erstellen. Ich und 3 weitere Informatiker programmierten bisher, einen anspruchsvollen Prototyp für die Mobile-App
+                von "Ukivo" (React.js / PWA). Zusätzlich leitete ich 2 "Firsties" in React.js ein...</p>
+        </div>
+
+
+        <!-- <a href="Dateien/e-Nex.pdf" target="_blank"><button>Projekt-Profil</button></a> -->
+    </div>
+    <div class="border-div"></div>
+
+    <div class="skills" id="third">
+        <div class="skills-text-wrapper">
+            <h1>
+                Interessen und Skills
+            </h1>
+            <br>
+        </div>
+        <div class="skillpictures">
+            <div class="skills1">
+                <img src="img/Skillspicture2.jpg" alt="Skillspicture2">
+                <a href="interests.html"><button class="skillsbutton">Interessen</button></a>
+
+            </div>
+            <div class="skills2">
+                <img src="img/Skillspicture1.jpg" alt="Skillspicture1">
+                <a href="skills.html"><button class="skillsbutton2">Skills</button></a>
+            </div>
+        </div>
+        <div id="flex">
+            <button class="send"><a id="send" href="mailto:loris.mueller@swisscom.com">Sende mir Feedback!</a></button>
+        </div>
+    </div>
+
+    <!--TypeIt Animation-->
+    <!--<h1 id="first-type"></h1>-->
+
+    <!--     <br><br>
+
+    <div class="contact-title" id="fourth">
+        <h1>Kontakt</h1>
+        <h2>Schreiben sie mir für Feedback oder Anmerkungen</h2>
+    </div>
+
+    <div class="contact-form">
+        <form id="contact-form" method="post" action="">
+            <input name="name" type="text" class="form-control" placeholder="Dein Name" required>
+            <br>
+            <input name="email" type="email" class="form-control" placeholder="Deine E-Mail" required>
+            <br>
+            <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea>
+            <br>
+
+            <input type="submit" class="form-control submit" value="Kontakt-Formular noch in Entwicklung">
+
+        </form>
+    </div>
+ -->
+</body>
+
+</html>
