@@ -4,7 +4,7 @@ window.addEventListener('scroll', function () {
     console.log('test')
     var navbar = document.getElementById("navbar");
     console.log(navbar)
-    if (window.scrollY > 600) {
+    if (window.scrollY > 630) {
         navbar.classList.add("scrolled");
     } else {
         navbar.classList.remove("scrolled");

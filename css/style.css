@@ -19,7 +19,7 @@
     }
     
     .scrolled {
-        background-color: rgba(255, 248, 248, 0.4);
+        background-color: #161616;
         transition: 0.4s ease-in-out;
     }
     
@@ -177,10 +177,11 @@
         height: 40px;
         width: 40px;
         border-radius: 50%;
-        border: 1px solid white;
+        border: 1px solid transparent;
+        background-color: transparent;
         -webkit-animation: bounce .3s infinite alternate;
         -moz-animation: bounce .3s infinite alternate;
-        animation: bounce .3s infinite alternate;
+        animation: bounce .3s infinite alternate; 
     }
     
     @-webkit-keyframes bounce {
@@ -274,6 +275,8 @@
     
     .aboutme h3 {
         margin-top: 50px;
+        margin-left: 3%;
+        margin-right: 3%;
         color: #919191;
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
@@ -293,6 +296,22 @@
     }
     
     .aboutme h3 :nth-child(8) {
+        color: #28D1FF;
+    }
+
+    .aboutme h3 :nth-child(10) {
+        color: #28D1FF;
+    }
+
+    .aboutme h3 :nth-child(12) {
+        color: #28D1FF;
+    }
+
+    .aboutme h3 :nth-child(14) {
+        color: #28D1FF;
+    }
+
+    .aboutme h3 :nth-child(16) {
         color: #28D1FF;
     }
     
@@ -334,13 +353,14 @@
         border-bottom: 1px solid #28D1FF;
         margin: 0vh 15vw 0vh 15vw
     }
+
     /* TIMELINE */
     
     .timeline {
         min-width: 300px;
         max-width: 500px;
         padding: 0 4em;
-        margin-left: 55vh;
+        margin: 0 auto;
     }
     
     .timeline p {
@@ -355,6 +375,14 @@
         counter-increment: section;
         position: relative;
         color: white;
+    }
+
+    .timeline p :nth-child(1) {
+        color: #28D1FF;
+    }
+
+    .timeline p :nth-child(3) {
+        color: #28D1FF;
     }
     
     .timeline p::before {
@@ -401,10 +429,39 @@
         border-top-right-radius: 0;
         border-top-left-radius: 0;
     }
-    /* TIMELINE */
+
+    @media only screen and (min-width: 768px) {
+        .timeline {
+            max-width: 800px;
+        }
+        .timeline p{
+            font-size: 18px;
+            padding: 40px;
+        }
+    }
+    
+    @media only screen and (min-width: 992px) {
+        .timeline {
+            max-width: 1000px;
+        }
+        .timeline p{
+            font-size: 20px;
+            padding: 50px;
+        }
+    }
+    
+    @media only screen and (min-width: 1200px) {
+        .timeline {
+            max-width: 1200px;
+        }
+        .timeline p{
+            font-size: 21px;
+            padding: 50px;
+        }
+    }
     
     .projects {
-        height: 100vh;
+        height: 100%;
         border-color: #161616;
         border-width: 20px 0px 20px 0px;
         border-style: double;
@@ -412,10 +469,16 @@
         flex-direction: column;
         align-items: unset;
     }
+
+    .not-visual {
+        margin-top: -80px;
+        color: transparent;
+        position: absolute;
+    }
     
     @media only screen and (max-width: 1400px) {
         .projects {
-            height: 130vh;
+            height: 100%;
             border-color: #161616;
             border-width: 20px 0px 20px 0px;
             border-style: double;
